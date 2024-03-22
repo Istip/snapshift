@@ -21,13 +21,8 @@ export default function RootLayout({
         variables: { colorPrimary: "#624cf5" },
       }}
     >
-      <html lang="en">
-        <body
-          className={`${font.className} antialiased`}
-          suppressContentEditableWarning={true}
-        >
-          {children}
-        </body>
+      <html lang="en" suppressHydrationWarning={true}>
+        <body className={`${font.className} antialiased`}>{children}</body>
       </html>
     </ClerkProvider>
   );

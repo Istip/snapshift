@@ -16,8 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressContentEditableWarning={true}>
-      <body className={`${font.className} antialiased`}>{children}</body>
+    <html lang="en">
+      <body
+        className={`${font.className} antialiased`}
+        suppressContentEditableWarning={true}
+      >
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,3 +1,4 @@
+// Links
 export const navLinks = [
   {
     label: "Home",
